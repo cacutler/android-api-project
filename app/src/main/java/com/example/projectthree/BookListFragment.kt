@@ -1,6 +1,5 @@
 package com.example.projectthree
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +11,6 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.projectthree.databinding.FragmentBookListBinding
 import kotlinx.coroutines.launch
-private const val TAG = "BookListFragment"
 class BookListFragment: Fragment() {
     private var _binding: FragmentBookListBinding? = null
     private val binding
