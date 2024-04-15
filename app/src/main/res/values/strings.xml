@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ProjectThree</string>
+    <string name="publisher">Published by:</string>
+    <string name="author">Written by:</string>
 </resources>

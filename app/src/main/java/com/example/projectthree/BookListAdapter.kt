@@ -18,6 +18,9 @@ class BookListAdapter(private val listItems: List<ListItem>): RecyclerView.Adapt
 }
 class BookViewHolder(private val binding: ListItemBookBinding): RecyclerView.ViewHolder(binding.root) {
     fun bind(listItem: ListItem) {
-        //TODO
+        binding.publisher.text = listItem.publisher
+        binding.author.text = listItem.author
+        binding.title.text = listItem.title
+        binding.description.text = listItem.description
     }
 }

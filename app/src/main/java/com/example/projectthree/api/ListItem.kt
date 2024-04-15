@@ -5,5 +5,6 @@ data class ListItem(
     val title: String,
     val description: String,
     val author: String,
-    val publisher: String
+    val publisher: String,
+    val primary_isbn13: String
 )
