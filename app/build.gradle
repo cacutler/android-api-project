@@ -46,6 +46,7 @@ dependencies {
     implementation libs.kotlinx.coroutines.core
     implementation libs.kotlinx.coroutines.android
     implementation libs.moshi
+    testImplementation 'junit:junit:4.12'
     kapt libs.moshi.kotlin.codegen
     implementation libs.converter.moshi
     testImplementation libs.junit
