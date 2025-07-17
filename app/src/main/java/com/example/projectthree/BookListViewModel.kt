@@ -12,8 +12,7 @@ private const val TAG = "BookListViewModel"
 class BookListViewModel: ViewModel() {
     private val bookRepository = BookRepository()
     private val _listItems: MutableStateFlow<List<ListItem>> = MutableStateFlow(emptyList())
-    val listItems: StateFlow<List<ListItem>>
-        get() = _listItems.asStateFlow()
+    val listItems: StateFlow<List<ListItem>> get() = _listItems.asStateFlow()
     init {
         viewModelScope.launch {
             try {

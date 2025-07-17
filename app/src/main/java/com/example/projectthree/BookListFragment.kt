@@ -13,16 +13,11 @@ import com.example.projectthree.databinding.FragmentBookListBinding
 import kotlinx.coroutines.launch
 class BookListFragment: Fragment() {
     private var _binding: FragmentBookListBinding? = null
-    private val binding
-        get() = checkNotNull(_binding) {
-            "Cannot access binding because it is null.  Is the view visible?"
-        }
+    private val binding get() = checkNotNull(_binding) {
+        "Cannot access binding because it is null.  Is the view visible?"
+    }
     private val bookListViewModel: BookListViewModel by viewModels()
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = FragmentBookListBinding.inflate(inflater, container, false)
         binding.bookList.layoutManager = LinearLayoutManager(context)
         return binding.root
